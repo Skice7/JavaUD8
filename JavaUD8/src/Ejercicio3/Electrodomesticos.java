@@ -9,6 +9,11 @@ public class Electrodomesticos {
 	
 
 	
+	private final static double preciobase_default = 100;
+	private final static Colores color_default =Colores.blanco;
+	private final static Consumos ConsumoEnergetico_default =Consumos.F;
+	private final static double peso_default = 5;
+	
 	private  double precioBase;
 	private  Colores color;
 	private  Consumos consumoenergetico;
@@ -16,17 +21,17 @@ public class Electrodomesticos {
 
 
 	public Electrodomesticos(){
-		this.precioBase = 100;
-		this.color=Colores.blanco;
-		this.consumoenergetico=Consumos.F;
-		this.peso=5;
+		this.precioBase = preciobase_default;
+		this.color=color_default;
+		this.consumoenergetico=ConsumoEnergetico_default;
+		this.peso=peso_default;
 		
 	}
 
 	public Electrodomesticos(double precioBase, double peso){
 		this.precioBase = precioBase;
-		this.color=Colores.blanco;
-		this.consumoenergetico=Consumos.F;
+		this.color=color_default;
+		this.consumoenergetico=ConsumoEnergetico_default;
 		this.peso=peso;
 		
 	}
